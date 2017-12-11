@@ -1,0 +1,153 @@
+<!-- We want you to be able to finish this prep assignment before starting your course. This assignment serves as a test for your understanding on the preps materials.
+Please create a standalone one-page HTML about-me site for yourself. This site consists of two part: An introduction of yourself and a photo album.
+We will check you assignment on the first day of the bootcamp.
+ 
+An Introduction to Yourself
+You can talk about  anything interesting about you as you wish. We always want to know more!
+Possible topics are: Hobbies, Dream, funny experiences etc.
+Please make it detail and nice-looking. (You could use this as your personal site in the future!)
+You are allowed and encouraged to use any technology included in this prep course.  HTML, CSS and JS are definitely useful.  
+Bootstrap and JQuery are also encouraged to be used for advance effect.
+
+A photo album of your pictures
+Please include some photos that are about you or you found interesting to be shared.
+The photo album should be written from scratch by yourself.
+The photo album should support ***basic pagination***. 
+JQuery and Bootstrap helps a lot for this task.
+
+A Readme for your about-me page written in ***Markdown***
+Markdown's syntax is very similar to wiki syntax.
+You should include what is inside your about-me site.
+You are also expected to explain your implementation.-->
+
+<html>
+    <head>
+        <title>Daniel's Webpage</title>
+        <link rel="stylesheet" href="./main.css">
+        
+        <!--Favicon-->
+        <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/ae/ac/18/aeac186369e9ffc1b29e7a7baad32497--nba-championships-championship-rings.jpg"> <!--Chicago Bulls-->    
+    </head> 
+    <body>
+        <div class="wrapper">
+          <div class="grid">
+              <div class="title">
+                  <h1>Daniel Hornstein's Homepage</h1>
+              </div>
+
+              <div class="header">
+                <nav>
+                    <a href="#aboutme" class="button">About Me</a>
+                    <a href="#myhome" class="button">New Zealand</a>
+                    <a href="#photoalbum"class="button">Photo Album</a>
+                    <a href="#weblog" class="button">Web Defect Log</a>
+                </nav>
+              </div>
+              
+              <div class="content">
+                <div id="aboutme">
+                    <br><br>
+                    <h2>About Me</h2>
+                        <p1>Hi everyone! Welcome to my very first webpage.<br><br>
+                        You'll have to forgive this very basic 1.0 version. In this version, I've attempted to use my very raw HTML and CSS skills and have been encouraged through several YouTube videos to utilise CSS Grids as of which I've built my photo album out of.
+                        <br><br>
+                        The other purpose of this page is to tell you a little bit about myself...so sitback, relax, read and enjoy.
+                        <br><br>
+                        [Quick final note: at the very end of this page because I'm still learning I've put a "Web Defect Log" which is basically a culmination of things I do not like and want to change about my webpage.]
+                        </p1>
+                        <br><br>
+                    <h3>Hobbies</h3>
+                    <p1>I really enjoy learning languages. As a matter of fact, I would call my intermediate in Spanish and begginer in Mandarin. I've created a little table below to highlight similar sentences across three languages.</p1>
+                    <br><br>
+                    <table style="width:100%">
+                        <tr>
+                            <th>English</th>
+                            <th>Español (Spanish)</th>
+                            <th>普通話 (Mandarin)</th>
+                        </tr>
+                        <tr>
+                            <td>Hello</td>
+                            <td>Hola</td>
+                            <td>你好 (Nǐ hǎo)</td>
+                        </tr>
+                        <tr>
+                           <td>My name is...</td>
+                           <td>Me llamo...</td>
+                           <td>我的名字是... (Wǒ de míngzì shì...)</td>
+                        </tr>
+                        <tr>
+                            <td>Have you visited New York?</td>
+                            <td>¿Has visitado Nueva York?</td>
+                            <td>你去過紐約嗎？ (Nǐ qùguò niǔyuē ma?)</td>
+                        </tr>
+                        <tr>
+                           <td>Tomorrow we eat chicken</td>
+                           <td>Mañana comemos pollo</td>
+                           <td>明天我們吃雞肉 (Míngtiān wǒmen chī jīròu)</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <br>
+                <div id="myhome">
+                        <h2>New Zealand</h2>
+                            <p1>As you may or may not know, I'm from the tiny island country of New Zealand. Us Kiwis are a very proud nation of around 4.5 million people -- so that's approximately half the size of Hong Kong.
+                                One of our oldest traditions which stemmed from the ancient Maori tribes is a "haka" or in English it's commonly known as a war dance. The haka is primarily used as both a greeting and to set a challenge 
+                                to an opposition. The below inset video is a haka performed by the All Blacks who are New Zealand's top rugby team. This particular haka in the video is called "Kapa O Pango" and it is a relatively
+                                new haka only being performed for the first time in 2005 whereas the original haka "Ka Mate" has been performed since 1820.
+                            </p1>
+                            <br><br>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/dGazxnFhPH4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                            <br><br>
+                            <p1>To give you an idea of my hometown, Christchurch linked below is a city of around 450,000 people. Yes, tiny! I think LKF has more people in the bars on a Friday and Saturday night than the entire population
+                                of my home town. Christchurch is situated in the provivence of Canterbury which is the largest province in the South Island of New Zealand.
+                            </p1>
+                            <br><br>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185183.90224579695!2d172.45899444743716!3d-43.512796995547625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d322f4863c5ed01%3A0x500ef8684799945!2sChristchurch%2C+New+Zealand!5e0!3m2!1sen!2shk!4v1512959813857" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+               
+                            <br><br>
+                        </div>
+
+                 <div id="photoalbum">
+                        <h2>Photo Album</h2>
+                        <p1>I don't really keep a lot of photos of myself so instead I wanted to highlight some of the beautiful parts of my homecity Christchurch and the surrounding Canterbury region.</p1>
+                        <br><br>
+                        <div class="albumgrid">
+                            <img src="https://img00.deviantart.net/571b/i/2012/304/a/0/christchurch_boys___high_school_by_shadowmajor428-d5jlwb0.jpg" alt="CBHS" title="Christchurch Boys' High School"/>
+                            <img src="https://nzfreed.files.wordpress.com/2013/04/56-punting-on-the-avon-river-chch.jpg" alt="Avon" title="Avon River"/>
+                            <img src="https://www.methvenmthutt.co.nz/wp-content/uploads/2016/06/Community-Methven-Mt-Hutt-Guide-NZ.jpg" alt="Mt. Hutt" title="Mt. Hutt"/>
+                            <img src="http://www.superxv.com/wp-content/uploads/2017/03/645245284crusaderspack.jpg" alt="Crusdaers" title="Crusaders"/>
+                            <img src="http://blog.greens.org.nz/wp-content/uploads/ChristchurchCathedral.jpg" alt="Cathedral" title="Cathedral"/>
+                            <img src="https://www.spendlifetraveling.com/wp-content/uploads/2017/02/christchurch_new_zealsnd_expat_life.jpg" alt="Tram" title="Tram"/>
+                            <img src="http://www.skiandride.nz/wp-content/uploads/2016/05/Ski-Ride-Snowboard-New-Zealand-Canterbury-Christchurch-4.jpg" alt="Waimakiriri" title="Waimakiriri"/>
+                            <img src="https://explore.gorentals.co.nz/images/uploads/2012/06/Lyttelton.jpg" alt="Port Hills" title="Port Hills"/>
+                            <img src="http://l7.alamy.com/zooms/af679b4c352642fa99ddac7ef6ea14b3/the-restored-peacock-fountain-in-christchurch-botanic-gardens-cpa1gb.jpg" alt="Botanic Gardens" title="Botanic Gardens"/>
+                            <img src="https://i2.wp.com/www.christchurchdailyphoto.com/wp-content/uploads/2016/07/DSC05879.jpg?ssl=1" alt="Chalice" title="Chalice"/>
+                        </div>
+                     
+                </div>
+                <br><br>
+
+                <div id="weblog">
+                        <h2>Webpage Defect Log</h2>
+                                <li>Cannot figure out a decent way to implement pagination as per the requirements [Need to ask questions on this]</li>
+                                <li>I want to be able to center the Haka video...'iframe { align-items: center;' doesn't work</li>
+                                <li>I want to be able to center the Google Map...same as above</li>
+                                <li>Not happy with the header button styles. Needs tweaking and beautifying</li>
+                                <li>The title is a bit bland. I need to understand how to vertically center text as in its current position it looks a bit weid</li>
+                                <li>The pixel size differential between h2 and h3 is a bit strange. I've turned h3 into 20px and it looks way too small but at 25px it is almost identical to h2. Needs beautifying.</li>
+                                <li>Where I created the wrapper, I wanted to put a different texture on the outside to make the page standout but I tinkered with it and couldn't find a solution. Must learn.</li>  
+                </div>
+                <br><br>
+                   
+              </div>
+
+              <div class="footer">
+                  <p2>Email: test@test.com<br>Phone: (+852) 8888 8888</p2>
+              </div>
+
+          </div>
+        </div>
+              
+    </body>
+</html>

@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.wrapper {
+    margin: 0 auto; /* 0px from top and bottom and auto from left and right */
+    width: 1250px;
+}
+  
+.grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 75px 1fr 75px;
+      grid-template-areas:
+      "title title"
+      "header header"
+      "content content"
+      "footer footer";
+      border-style: solid;
+      border-width: 1px;
+      padding: 10px;
+    }
+
+  .title {
+      grid-area: title;
+      background-color: black;
+      align-items: center; /* This doesn't work */
+  }
+
+  .header {
+    grid-area: header;
+    background: grey;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/hypnotize.png");
+  }
+
+  .button { /*I read that its easier to style 'a href' and add a button class than to create a button from scratch. Need confirmation? */
+    font: bold; 
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 12px 36px 12px 36px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+  }
+
+  .content {
+    grid-area: content;
+    display: grid; /* this is a sub-grid. I was originally going to divide up the sub-grid to create a CSS style photo album but decided not to however left this option*/
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: black;
+    text-align: center;
+  }
+
+  /* latin */
+@font-face {
+    font-family: 'Sacramento';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Sacramento'), local('Sacramento-Regular'), url(https://fonts.gstatic.com/s/sacramento/v5/WFDkXpubrEwopJnSlHV6CPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  }
+
+  h1 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      font-size: 50px;
+  }
+
+  h2 {
+      font-family: 'Sacramento';
+      font-size: 30px;
+  }
+
+  h3 {
+      font-family: 'Sacramento';
+      font-size: 25px;
+  }
+
+  ul li {
+      padding: 10px;
+  }
+
+  p2 {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+  }
+
+  .albumgrid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /*w e repeat the auto-fill, which allows set a fixed size bound by a minimum of 200px and a max of 1fr */
+    grid-gap: 20px;
+    align-items: stretch; /* this property stretches the picture to fit the minmax propertions as defined above */
+    }
+  
+  .albumgrid img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+  }
+
+  table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
